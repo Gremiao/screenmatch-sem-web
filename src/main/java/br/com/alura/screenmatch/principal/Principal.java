@@ -112,5 +112,8 @@ public class Principal {
         System.out.println("Melhor : "+est.getMax());
         System.out.println("Pior : "+est.getMin());
         System.out.println("Quantidade : "+est.getCount());
+        System.out.println("---------------------------------");
+
+
     }
 }
