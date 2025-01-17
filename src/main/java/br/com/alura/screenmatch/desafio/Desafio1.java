@@ -1,11 +1,10 @@
 package br.com.alura.screenmatch.desafio;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
-public class Principal {
+public class Desafio1 {
     public static void main(String[] args) {
         Scanner leitor = new Scanner(System.in);
         int numero1,numero2;
@@ -37,11 +36,10 @@ public class Principal {
 
         VerificarPalindromo palindromo = p ->{
             String reversa = new StringBuilder(palavra).reverse().toString();
-            if(reversa.equalsIgnoreCase(p)) return true;
-            return false;
+            return reversa.equalsIgnoreCase(p);
         };
 
-        System.out.println(new StringBuilder().append("A palavra é um palíndomo ? ").append(palindromo.isPalindromo(palavra)?"Sim":"Não").toString());
+        System.out.println(new StringBuilder().append("A palavra é um palíndomo ? ").append(palindromo.isPalindromo(palavra)?"Sim":"Não"));
 
         List<Integer> listaNumeros = Arrays.asList(1,2,3,4,5,6);
         listaNumeros.replaceAll(n -> n*3);
